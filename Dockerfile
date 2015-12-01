@@ -7,7 +7,8 @@ RUN apt-get update -yqq \
     && mkdir -p /var/unvired/common/pa/UNVIRED.APP482129901084 \
     && mkdir -p /var/unvired/common/pa/Revision/UNVIRED.APP482129901084/1 \
     && mkdir -p /var/unvired/common/unvired \
-    && mkdir -p /var/unvired/common/keystore/PK12_FILE_FOLDER/UNVIRED
+    && mkdir -p /var/unvired/common/keystore/PK12_FILE_FOLDER/UNVIRED \
+    && mkdir -p /var/unvired/sapjco \
 
 LABEL vendor="Unvired Inc." \
       com.unvired.UMP.module="DATA" \
