@@ -20,7 +20,7 @@ LABEL vendor="Unvired Inc." \
 
 RUN wget -q --no-check-certificate -O/var/unvired/UMP/db/UMP-platform.h2.db https://www.dropbox.com/s/fv6r0y6xp7y1lie/ump-platform.h2.db
 RUN wget -q --no-check-certificate -O/var/unvired/UMP/db/quartz.h2.db https://www.dropbox.com/s/ignth2p4meyula0/quartz.h2.db
-RUN wget -q --no-check-certificate -O/var/unvired/common/keystore/PK12_FILE_FOLDER/UNVIRED/UNVIRED_keystore.p12 
+RUN wget -q --no-check-certificate -O/var/unvired/common/keystore/PK12_FILE_FOLDER/UNVIRED/UNVIRED_keystore.p12 https://www.dropbox.com/s/i6x1gyuyrpg96ii/UNVIRED_keystore.p12
 RUN wget -q --no-check-certificate -O/var/unvired/common/pa/config/quartz.properties https://www.dropbox.com/s/qn750kin1f1etqj/quartz.properties
 RUN wget -q --no-check-certificate -O/var/unvired/common/pa/Revision/UNVIRED.APP482129901084/1/UNVIRED_SAP_CUSTOMER_SEARCH.jar https://www.dropbox.com/s/gm9xby7xod66jke/UNVIRED_SAP_CUSTOMER_SEARCH.jar
 RUN wget -q --no-check-certificate -O/var/unvired/common/pa/UNVIRED.APP482129901084/UNVIRED_SAP_CUSTOMER_SEARCH.jar https://www.dropbox.com/s/gm9xby7xod66jke/UNVIRED_SAP_CUSTOMER_SEARCH.jar
