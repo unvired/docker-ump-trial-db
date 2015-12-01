@@ -2,6 +2,7 @@ FROM ubuntu:14.04
 MAINTAINER Unvired <support@unvired.io>
 
 RUN apt-get update -yqq \
+    && apt-get install -y --no-install-recommends curl wget \
     && mkdir -p /var/unvired/UMP/db \
     && mkdir -p /var/unvired/common/pa/config \
     && mkdir -p /var/unvired/common/pa/UNVIRED.APP482129901084 \
