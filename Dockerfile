@@ -16,14 +16,14 @@ LABEL vendor="Unvired Inc." \
       com.unvired.UMP.release="1.0.1" \
       com.unvired.UMP.release-date="1-Dec-2015"
 
-# The required files - UMP db, Quartz db, demo company key, PA
+# The required files - UMP db, Quartz db, root company key, PA
 
-RUN wget -q --no-check-certificate -O/var/unvired/UMP/db/UMP-platform.h2.db https://www.dropbox.com/s/fv6r0y6xp7y1lie/ump-platform.h2.db
-RUN wget -q --no-check-certificate -O/var/unvired/UMP/db/quartz.h2.db https://www.dropbox.com/s/ignth2p4meyula0/quartz.h2.db
-RUN wget -q --no-check-certificate -O/var/unvired/common/keystore/PK12_FILE_FOLDER/UNVIRED/UNVIRED_keystore.p12 https://www.dropbox.com/s/i6x1gyuyrpg96ii/UNVIRED_keystore.p12
-RUN wget -q --no-check-certificate -O/var/unvired/common/pa/config/quartz.properties https://www.dropbox.com/s/qn750kin1f1etqj/quartz.properties
-RUN wget -q --no-check-certificate -O/var/unvired/common/pa/Revision/UNVIRED.APP482129901084/1/UNVIRED_SAP_CUSTOMER_SEARCH.jar https://www.dropbox.com/s/gm9xby7xod66jke/UNVIRED_SAP_CUSTOMER_SEARCH.jar
-RUN wget -q --no-check-certificate -O/var/unvired/common/pa/UNVIRED.APP482129901084/UNVIRED_SAP_CUSTOMER_SEARCH.jar https://www.dropbox.com/s/gm9xby7xod66jke/UNVIRED_SAP_CUSTOMER_SEARCH.jar
+RUN wget -q -O/var/unvired/UMP/db/UMP-platform.h2.db http://owncloud.unvired.com/index.php/s/63JdM1Ply0Zcscz/download
+RUN wget -q -O/var/unvired/UMP/db/quartz.h2.db http://owncloud.unvired.com/index.php/s/uKf2ltm6dzgn8sI/download
+RUN wget -q -O/var/unvired/common/keystore/PK12_FILE_FOLDER/UNVIRED/UNVIRED_keystore.p12 http://owncloud.unvired.com/index.php/s/zfm7tKsfATszQCd/download
+RUN wget -q -O/var/unvired/common/pa/config/quartz.properties http://owncloud.unvired.com/index.php/s/CFDCJpCyYCD5l3U/download
+RUN wget -q -O/var/unvired/common/pa/Revision/UNVIRED.APP482129901084/1/UNVIRED_SAP_CUSTOMER_SEARCH.jar http://owncloud.unvired.com/index.php/s/9HdPTQPFWs50Rzf/download
+RUN wget -q -O/var/unvired/common/pa/UNVIRED.APP482129901084/UNVIRED_SAP_CUSTOMER_SEARCH.jar http://owncloud.unvired.com/index.php/s/9HdPTQPFWs50Rzf/download
 
 # Create /var/unvired volume
 VOLUME /var/unvired
