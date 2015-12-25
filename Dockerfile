@@ -18,12 +18,12 @@ LABEL vendor="Unvired Inc." \
 
 # The required files - UMP db, Quartz db, root company key, PA
 
-RUN wget -q -O/var/unvired/UMP3/db/ump-platform.h2.db http://owncloud.unvired.com/index.php/s/63JdM1Ply0Zcscz/download
-RUN wget -q -O/var/unvired/UMP3/db/quartz.h2.db http://owncloud.unvired.com/index.php/s/uKf2ltm6dzgn8sI/download
-RUN wget -q -O/var/unvired/common/keystore/PK12_FILE_FOLDER/UNVIRED/UNVIRED_keystore.p12 http://owncloud.unvired.com/index.php/s/zfm7tKsfATszQCd/download
-RUN wget -q -O/var/unvired/common/pa/config/quartz.properties http://owncloud.unvired.com/index.php/s/CFDCJpCyYCD5l3U/download
-RUN wget -q -O/var/unvired/common/pa/Revision/UNVIRED.APP482129901084/1/UNVIRED_SAP_CUSTOMER_SEARCH.jar http://owncloud.unvired.com/index.php/s/9HdPTQPFWs50Rzf/download
-RUN wget -q -O/var/unvired/common/pa/UNVIRED.APP482129901084/UNVIRED_SAP_CUSTOMER_SEARCH.jar http://owncloud.unvired.com/index.php/s/9HdPTQPFWs50Rzf/download
+RUN wget -q -O/var/unvired/UMP3/db/ump-platform.h2.db https://owncloud.unvired.com/index.php/s/63JdM1Ply0Zcscz/download
+RUN wget -q -O/var/unvired/UMP3/db/quartz.h2.db https://owncloud.unvired.com/index.php/s/uKf2ltm6dzgn8sI/download
+RUN wget -q -O/var/unvired/common/keystore/PK12_FILE_FOLDER/UNVIRED/UNVIRED_keystore.p12 https://owncloud.unvired.com/index.php/s/zfm7tKsfATszQCd/download
+RUN wget -q -O/var/unvired/common/pa/config/quartz.properties https://owncloud.unvired.com/index.php/s/CFDCJpCyYCD5l3U/download
+RUN wget -q -O/var/unvired/common/pa/Revision/UNVIRED.APP482129901084/1/UNVIRED_SAP_CUSTOMER_SEARCH.jar https://owncloud.unvired.com/index.php/s/9HdPTQPFWs50Rzf/download
+RUN wget -q -O/var/unvired/common/pa/UNVIRED.APP482129901084/UNVIRED_SAP_CUSTOMER_SEARCH.jar https://owncloud.unvired.com/index.php/s/9HdPTQPFWs50Rzf/download
 
 # Create /var/unvired volume
 VOLUME /var/unvired
