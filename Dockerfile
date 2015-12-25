@@ -2,7 +2,7 @@ FROM ubuntu:14.04
 MAINTAINER Unvired <support@unvired.io>
 
 RUN apt-get update -yqq \
-    && apt-get install -y --no-install-recommends curl wget \
+    && apt-get install -y --no-install-recommends curl wget ca-certificates \
     && mkdir -p /var/unvired/UMP3/db \
     && mkdir -p /var/unvired/common/pa/config \
     && mkdir -p /var/unvired/common/pa/UNVIRED.APP482129901084 \
