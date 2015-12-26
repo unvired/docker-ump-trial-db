@@ -11,7 +11,7 @@ RUN apt-get update -yqq \
     && mkdir -p /var/unvired/common/keystore/PK12_FILE_FOLDER/UNVIRED
 
 LABEL vendor="Unvired Inc." \
-      com.unvired.UMP.module="DATA" \
+      com.unvired.UMP.module="TRIAL-DATA" \
       com.unvired.UMP.release="1.0.2" \
       com.unvired.UMP.release-date="18-Dec-2015"
 
